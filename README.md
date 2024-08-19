@@ -1,5 +1,6 @@
 # Twitter sentiment analysus 
 
+[Cсылка на веб-приложение по распознаванию тональности твита]()
 
 ## 🎯 Задание
 
@@ -175,4 +176,8 @@ from aux.train_rnn import train  # Функция для обучения мод
 from aux.rnn_preprocessing import preprocess_single_string  # Функция для предобработки текста для RNN
 
 ```
+
+[Cсылка на Google Colab Baseline](https://drive.google.com/file/d/1xkE8q7-_MKxcUw4jXC2PlJN2lh1ryssf/view?usp=sharing)
+[Cсылка на Google Colab анализ, предобработка данных, обучение](https://drive.google.com/file/d/1HZKIMbRExJrw2dGLwKtotccpk8s_ynNJ/view?usp=sharing)
+
 
