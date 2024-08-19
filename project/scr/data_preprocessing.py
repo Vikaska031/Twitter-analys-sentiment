@@ -6,17 +6,18 @@ from collections import Counter
 from config import emoji_pattern, username_pattern, mystem, stop_words, swear_words
 
 def data_preprocessing(text: str, positive_emoji_placeholder: str = 'отлично', negative_emoji_placeholder: str = 'плохо') -> tuple:
-    """Preprocessing string: lowercase, removing html-tags, punctuation, stopwords, and replacing emojis.
-       Also calculates the count of swear words.
+    """Предобработка строки: приведение к нижнему регистру, удаление html-тегов, пунктуации, стоп-слов и замена эмодзи.
+       Также вычисляет количество нецензурных слов.
 
-    Args:
-        text (str): Input string for preprocessing
-        positive_emoji_placeholder (str): Placeholder for positive emojis
-        negative_emoji_placeholder (str): Placeholder for negative emojis
+    Аргументы:
+        text (str): Входная строка для предобработки
+        positive_emoji_placeholder (str): Заполнитель для положительных эмодзи
+        negative_emoji_placeholder (str): Заполнитель для отрицательных эмодзи
 
-    Returns:
-        tuple: Preprocessed string and count of swear words
+    Возвращает:
+        tuple: Предобработанная строка и количество нецензурных слов
     """
+
     def replace_emoji(match):
         emoji = match.group()
         if emoji in positive_emojis:
