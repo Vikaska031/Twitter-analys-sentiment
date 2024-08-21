@@ -1,6 +1,6 @@
 # Twitter sentiment analysis 
 
-[Cсылка на веб-приложение по распознаванию тональности твита](https://04b047dae67f413750.gradio.live/)
+[Cсылка на веб-приложение по распознаванию тональности твита](https://461f9c4641b1e95f6f.gradio.live/)
 
 
 [Cсылка на веб-приложение по распознаванию тональности твита на Hagging Face](https://huggingface.co/spaces/Viktorya031/Sentiment_2.0)
